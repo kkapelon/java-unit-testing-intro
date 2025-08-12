@@ -35,4 +35,13 @@ public class BasketWeightTest {
         assertEquals("Expected 18", 18, weightCalculator1.getTotalWeight());
         assertEquals("Expected 18", 18, weightCalculator2.getTotalWeight());
     }
+
+    @Test
+    public void neverNegativeWeigth() {
+        BasketWeightCalculator weightCalculator = new BasketWeightCalculator();
+        weightCalculator.addItem(5);
+        weightCalculator.addItem(-13);
+
+        assertEquals("Expected 0", 0, weightCalculator.getTotalWeight());
+    }
 }
