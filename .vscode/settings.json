@@ -1,0 +1,8 @@
+{
+    "java.project.sourcePaths": [
+        "src/test/com/codepipes",
+        "src/main/com/codepipes",
+        "src/main/com",
+        "src/test/java/com/codepipes"
+    ]
+}

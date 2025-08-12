@@ -1,3 +1,5 @@
+package com.codepipes;
+
 public class BasketWeightCalculator {
 
     private int totalWeight = 0;
